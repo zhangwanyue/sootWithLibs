@@ -1,0 +1,44 @@
+public class Foo extends java.lang.Object
+{
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] args;
+        Foo temp$0;
+
+        args := @parameter0: java.lang.String[];
+
+        temp$0 = new Foo;
+
+        specialinvoke temp$0.<Foo: void <init>()>();
+
+        virtualinvoke temp$0.<Foo: int bar(int)>(21);
+
+        return;
+    }
+
+    public int bar(int)
+    {
+        Foo this;
+        int n, temp$1;
+
+        this := @this: Foo;
+
+        n := @parameter0: int;
+
+        temp$1 = n + 42;
+
+        return temp$1;
+    }
+
+    public void <init>()
+    {
+        Foo this;
+
+        this := @this: Foo;
+
+        specialinvoke this.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+}
