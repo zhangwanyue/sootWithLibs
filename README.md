@@ -17,7 +17,7 @@ official recommend using java >= 1.8.0_144
 [https://github.com/Sable/soot/wiki/Building-Soot-with-IntelliJ-IDEA]
 
 
-### some dependent project of it(if you do not want to compile these project yourself, you can use the compiled jars in local_lib dir):
+### some dependent projects of it(if you do not want to compile these project yourself, you can use the compiled jars in `local_lib/` dir):
 
 [https://github.com/Sable/jasmin]
 
@@ -30,7 +30,7 @@ official recommend using java >= 1.8.0_144
 [https://github.com/Sable/polyglot]
 
 
-### install dependent jars in local_lib, run this(you need to install mvn first):
+### install dependent jars in `local_lib/`, run this(you need to install mvn first):
 
 `./installJar.sh`
 
@@ -55,7 +55,7 @@ Edit your Run/Debug configurations:
 * Working directory: `/xxx/soot/test`(mine is `/home/vera/IdeaProjects/soot/test`)
 * after you run, result can be found at `xxx/test/sootOutput/Foo.jimple`. 
 
-Congratulations, you have transfered java source code to jimple code!
+Congratulations, you have transferred java source code into jimple code!
 
 
 # how to compile this project:
@@ -80,7 +80,7 @@ now you can use this command to test your compiled jar:
 
 this project is cloned from develop branch in 2018/1/18, the version of it is 3.0.0-SNAPSHOT(the version can be found in pom.xml)
 
-you can also download 3.0.0-SNAPSHOT.jar from nexus repository(see the location below).
+you can also download 3.0.0-SNAPSHOT.jar from nexus repository(see the downloaded link below).
 
 
 ### dependent jars:
@@ -89,7 +89,7 @@ you can find dependent jars in nexus repository, those nightly-build jars may he
 [http://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot/]
 
 * ATTENTION: 
-jasmin-3.0.0 dependent on java_cup.jar(see the pom.xml of jasmin-3.0.0 for detail), but java_cup.jar have not be compiled in jasmin-3.0.0.jar, so you need to add this to soot project's pom.xml(It really stuck me for a long time!!!)
+jasmin-3.0.0 depends on java_cup.jar(see the pom.xml of jasmin-3.0.0 for detail), but java_cup.jar have not be compiled in jasmin-3.0.0.jar, so you need to add this to soot project's pom.xml(It really stuck me for a long time!!!)
 
 ```xml
 <dependency>
