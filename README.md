@@ -1,23 +1,23 @@
-## How to run this project:
+# How to run this project:
 
-#### project in github:
+### project in github:
 
 [https://github.com/Sable/soot]
 
 
-#### the jdk version needed in this project:
+### the jdk version needed in this project:
 
 I am using: java version "1.8.0_161"
 
 official recommend using java >= 1.8.0_144
 
 
-#### want to build soot with idea? read this:
+### want to build soot with idea? read this:
 
 [https://github.com/Sable/soot/wiki/Building-Soot-with-IntelliJ-IDEA]
 
 
-#### some dependent project of it(if you do not want to compile these project yourself, you can use the compiled jars in local_lib dir):
+### some dependent project of it(if you do not want to compile these project yourself, you can use the compiled jars in local_lib dir):
 
 [https://github.com/Sable/jasmin]
 
@@ -30,11 +30,11 @@ official recommend using java >= 1.8.0_144
 [https://github.com/Sable/polyglot]
 
 
-#### install dependent jars in local_lib, run this(you need to install mvn first):
+### install dependent jars in local_lib, run this(you need to install mvn first):
 
 `./installJar.sh`
 
-#### Ok, now you can have a try with this little test:
+### Ok, now you can have a try with this little test:
 
 the original file is test/Foo.java, we want to transfer it into jimple code.
 
@@ -58,7 +58,7 @@ Edit your Run/Debug configurations:
 Congratulations, you have transfered java source code to jimple code!
 
 
-## how to compile this project:
+# how to compile this project:
 
 run this:
 `mvn clean compile package`
@@ -70,20 +70,20 @@ now you can use this command to test your compiled jar:
 `java -cp sootclasses-trunk-jar-with-dependencies.jar soot.Main -cp . -pp -f J Foo`
 
 
-## More information for you:
+# More information for you:
 
-#### want to get the latest project youself? try this:
+### want to get the latest project youself? try this:
 
 `git clone https://github.com/Sable/soot.git -b develop`
 
-#### the version of this project:
+### the version of this project:
 
 this project is cloned from develop branch in 2018/1/18, the version of it is 3.0.0-SNAPSHOT(the version can be found in pom.xml)
 
 you can also download 3.0.0-SNAPSHOT.jar from nexus repository(see the location below).
 
 
-#### dependent jars:
+### dependent jars:
 
 you can find dependent jars in nexus repository, those nightly-build jars may help you:
 [http://soot-build.cs.uni-paderborn.de/nexus/repository/soot-snapshot/]
@@ -102,7 +102,7 @@ we have prepared you java_cup.jar in local_lib, which can also be found in [http
 you can also compile java_cup.jar yourself using [https://github.com/Sable/java_cup] project.
 
 
-#### these guides may help you with this big project:
+### these guides may help you with this big project:
 
 [https://github.com/Sable/soot/wiki]
 
