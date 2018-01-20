@@ -90,7 +90,8 @@ you can find dependent jars in nexus repository, those nightly-build jars may he
 
 * ATTENTION: 
 jasmin-3.0.0 dependent on java_cup.jar(see the pom.xml of jasmin-3.0.0 for detail), but java_cup.jar have not be compiled in jasmin-3.0.0.jar, so you need to add this to soot project's pom.xml(It really stuck me for a long time!!!)
-```xml
+
+```
 <dependency>
 	<groupId>ca.mcgill.sable</groupId>
 	<artifactId>java_cup</artifactId>
