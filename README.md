@@ -1,6 +1,6 @@
 # How to run this project:
 
-### project in github:
+### original project in github:
 
 [https://github.com/Sable/soot]
 
